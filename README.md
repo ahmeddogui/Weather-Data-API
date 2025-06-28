@@ -52,9 +52,7 @@ locust -f locustfile.py
 The API exposes Prometheus-compatible metrics using prometheus-fastapi-instrumentator.
 
 🧱 Project Structure
-css
-Copier
-Modifier
+```text
 weather_api/
 ├── src/
 │   ├── controllers/
@@ -67,6 +65,7 @@ weather_api/
 ├── main.py
 ├── requirements.txt
 ├── locustfile.py
+```
 📄 License
 MIT – This project is open-source and free to use with attribution.
 
