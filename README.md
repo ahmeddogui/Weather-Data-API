@@ -11,7 +11,7 @@ Fonctionnalités principales
 [x] Test de charge avec Locust
 [x] Monitoring Prometheus-compatible
 Installation
-git clone https://github.com/votre-utilisateur/WeatherAPI.git
+git clone https://github.com/ahmeddogui/Weather-Data-API
 cd WeatherAPI
 pip install -r requirements.txt
 Démarrage de l'API
