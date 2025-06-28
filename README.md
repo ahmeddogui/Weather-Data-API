@@ -1,36 +1,60 @@
-# Weather-Data-API
+WeatherAPI – Weather Data Aggregator
+This project is a REST API built with FastAPI that aggregates weather data from multiple external services (Open-Meteo, OpenWeatherMap, WeatherAPI). It was developed following a TDD approach and includes integration, contract, load testing, and monitoring.
 
-WeatherAPI – Agrégateur de Données Météorologiques
-Ce projet est une API REST construite avec FastAPI qui agrège les données météo provenant de plusieurs services externes (Open-Meteo, OpenWeatherMap, WeatherAPI). Il a été développé dans une logique TDD avec tests d’intégration, de contrat, de charge et monitoring.
+🚀 Main Features
+ GET /weather/current/{city}: Fetches the current temperature of a given city
 
-Fonctionnalités principales
-[x] GET /weather/current/{city} : récupère la température actuelle d'une ville
-[x] Agrégation multi-sources avec fallback intelligent
-[x] Documentation Swagger automatique (/docs)
-[x] Tests unitaires, d'intégration et de contrat avec pytest & jsonschema
-[x] Test de charge avec Locust
-[x] Monitoring Prometheus-compatible
-Installation
-git clone https://github.com/ahmeddogui/Weather-Data-API
+ Multi-source aggregation with intelligent fallback
+
+ Auto-generated Swagger documentation at /docs
+
+ Unit, integration, and contract testing with pytest & jsonschema
+
+ Load testing using Locust
+
+ Prometheus-compatible monitoring
+
+📦 Installation
+bash
+Copier
+Modifier
+git clone https://github.com/ahmeddogui/Weather-Data-API.git
 cd WeatherAPI
 pip install -r requirements.txt
-Démarrage de l'API
+▶️ Running the API
+bash
+Copier
+Modifier
 uvicorn main:app --reload
-Accessible ensuite sur : - Swagger : http://localhost:8000/docs - Endpoint santé : http://localhost:8000/health
+Accessible at:
 
-Lancer les tests
-# Tests unitaires et d'intégration
+Swagger UI: http://localhost:8000/docs
+
+Health check: http://localhost:8000/health
+
+✅ Running Tests
+Unit and Integration Tests
+bash
+Copier
+Modifier
 pytest
-
-# Test de contrat
+Contract Test
+bash
+Copier
+Modifier
 pytest src/tests/contract/test_weather_contract.py
-
-# Test de charge
+Load Testing
+bash
+Copier
+Modifier
 locust -f locustfile.py
-Monitoring (optionnel)
-L'API expose des métriques compatibles Prometheus via prometheus-fastapi-instrumentator.
+📈 Monitoring (Optional)
+The API exposes Prometheus-compatible metrics using prometheus-fastapi-instrumentator.
 
-Architecture du projet
+🧱 Project Structure
+css
+Copier
+Modifier
 weather_api/
 ├── src/
 │   ├── controllers/
@@ -39,9 +63,10 @@ weather_api/
 │   │   └── weather_service.py
 │   └── tests/
 │       ├── integration/
-│       ├── contract/
+│       └── contract/
 ├── main.py
 ├── requirements.txt
 ├── locustfile.py
-Licence
-MIT – Ce projet est libre de réutilisation avec attribution.
+📄 License
+MIT – This project is open-source and free to use with attribution.
+
