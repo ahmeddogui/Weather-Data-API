@@ -65,6 +65,7 @@ weather_api/
 ├── main.py
 ├── requirements.txt
 ├── locustfile.py
+├── docker-compose.yml
 ```
 📄 License
 MIT – This project is open-source and free to use with attribution.
