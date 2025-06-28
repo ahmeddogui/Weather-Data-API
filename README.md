@@ -54,7 +54,11 @@ The API exposes Prometheus-compatible metrics using prometheus-fastapi-instrumen
 🧱 Project Structure
 ```text
 weather_api/
-├── captures/
+├── screenshots/
+│   ├── test_contract.png
+│   ├── test_integration.png
+│   ├── locust_dashboard.png
+│   └── swagger_terminal.png
 ├── src/
 │   ├── controllers/
 │   │   └── weather_controller.py
