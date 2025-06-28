@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+requests
+python-dotenv
+pytest
+pytest-mock
+httpx
+jsonschema
+locust
+prometheus-fastapi-instrumentator
