@@ -54,6 +54,7 @@ The API exposes Prometheus-compatible metrics using prometheus-fastapi-instrumen
 🧱 Project Structure
 ```text
 weather_api/
+├── captures/
 ├── src/
 │   ├── controllers/
 │   │   └── weather_controller.py
@@ -66,6 +67,7 @@ weather_api/
 ├── requirements.txt
 ├── locustfile.py
 ├── docker-compose.yml
+
 ```
 📄 License
 MIT – This project is open-source and free to use with attribution.
